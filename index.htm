@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Home Depot Holiday Offer - Up to $750 OFF Christmas Trees & Decor</title>
+  <meta name="description" content="Exclusive Holiday Savings Event. Claim up to $750 off Christmas Trees, Holiday Lighting & Outdoor Decor at The Home Depot.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #f7f7f7;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      min-height: 100vh;
+    }
+    .top-bar {
+      background: #f97316;
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 28px 20px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #fff7ed 0%, #fff 100%);
+    }
+    .social-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid #fed7aa;
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #9a3412;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .social-proof .dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .badge {
+      display: inline-block;
+      background: #ea580c;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .subhead {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .offer-box {
+      background: #fff;
+      border: 2px solid #fdba74;
+      border-radius: 16px;
+      padding: 24px 20px;
+      margin: 0 16px 24px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.08);
+    }
+    .offer-amount {
+      font-size: 42px;
+      font-weight: 900;
+      color: #ea580c;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .offer-label {
+      font-size: 15px;
+      font-weight: 600;
+      color: #9a3412;
+      margin-bottom: 16px;
+    }
+    .eligible {
+      text-align: left;
+      font-size: 14px;
+      color: #333;
+    }
+    .eligible li {
+      list-style: none;
+      padding: 6px 0 6px 22px;
+      position: relative;
+    }
+    .eligible li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #16a34a;
+      font-weight: 700;
+    }
+    .steps {
+      padding: 8px 20px 28px;
+    }
+    .steps h2 {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #111;
+    }
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      padding: 14px 16px;
+      background: #fafafa;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background: #ea580c;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .step-text {
+      font-size: 15px;
+      color: #333;
+      padding-top: 3px;
+    }
+    .cta-wrap {
+      padding: 0 20px 28px;
+      text-align: center;
+    }
+    .cta {
+      display: block;
+      width: 100%;
+      background: #ea580c;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 18px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
+      transition: background 0.15s, transform 0.1s;
+    }
+    .cta:hover {
+      background: #c2410c;
+      transform: translateY(-1px);
+    }
+    .cta:active {
+      transform: translateY(0);
+    }
+    .trust {
+      text-align: center;
+      padding: 0 20px 32px;
+      font-size: 13px;
+      color: #666;
+    }
+    .trust strong {
+      color: #16a34a;
+    }
+    .faq {
+      padding: 28px 20px 40px;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+    }
+    .faq h2 {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 6px;
+      color: #111;
+    }
+    .faq-intro {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+    .faq-item {
+      margin-bottom: 18px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .faq-item h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.55;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #999;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+    @media (min-width: 480px) {
+      h1 { font-size: 32px; }
+      .offer-amount { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      Limited-Time Holiday Offer — Ends Soon
+    </div>
+
+    <div class="hero">
+      <div class="social-proof">
+        <span class="dot"></span>
+        Sarah just saved $340 on 7.5ft Pre-Lit Colorado Spruce Tree at The Home Depot
+      </div>
+
+      <div class="badge">Exclusive Holiday Savings Event</div>
+
+      <h1>UP TO $750 OFF</h1>
+      <p class="subhead">Valid on Christmas Trees, Holiday Lighting &amp; Outdoor Decor at The Home Depot</p>
+    </div>
+
+    <div class="offer-box">
+      <div class="offer-amount">$750 Value</div>
+      <div class="offer-label">The Home Depot Holiday Savings</div>
+      <ul class="eligible">
+        <li>Pre-Lit &amp; Artificial Christmas Trees (Home Accents Holiday, Fraser Hill)</li>
+        <li>Giant Outdoor Inflatables &amp; Yard Decor (Grinch, Disney, Santa)</li>
+        <li>Energy-Smart LED Christmas Lights &amp; Icicle Bulbs</li>
+        <li>Wreaths, Garlands &amp; Front Porch Greenery</li>
+        <li>Indoor Ornaments, Tree Toppers &amp; Decorative Skirts</li>
+        <li>Holiday Animatronics &amp; Festive Musical Displays</li>
+        <li>Free In-Store Pickup &amp; Delivery at HomeDepot.com</li>
+      </ul>
+    </div>
+
+    <div class="steps">
+      <h2>How to Claim Your Savings</h2>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">Click The Button Below</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">Enter Your Email &amp; Basic Info</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Answer a Few Quick Questions</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">Complete 3–5 Simple Deals</div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-text">Receive Your $750 Home Depot Holiday Savings Voucher</div>
+      </div>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="cta" href="https://linkthem.net/?offer_id=2440&aff_id=209795" target="_blank" rel="noopener">
+        Claim Up To $750 Savings
+      </a>
+    </div>
+
+    <div class="trust">
+      Trustpilot · Trust score <strong>9.7</strong> | <strong>2,347 reviews</strong>
+    </div>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p class="faq-intro">Everything you need to know about claiming your savings</p>
+
+      <div class="faq-item">
+        <h3>How do I apply the $750 savings towards Home Depot holiday items?</h3>
+        <p>Once you complete the required sponsor deals, your $750 Home Depot Holiday savings voucher code will be delivered digitally via email. You can redeem it online at HomeDepot.com or in-store toward any eligible Christmas trees, holiday lighting, inflatables, and seasonal decor.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Which Christmas trees and holiday decor items are eligible?</h3>
+        <p>Savings apply across all seasonal Christmas categories at The Home Depot, including pre-lit artificial Christmas trees (Home Accents Holiday, Fraser Hill Farm), live fresh-cut trees, giant outdoor inflatables, animatronics, LED light strings, holiday wreaths, garlands, ornaments, and yard display sets.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What is a "Deal"?</h3>
+        <p>A "Deal" is an optional activity provided by one of our promotional partners. These activities may include things like downloading an app, completing a survey, signing up for a service, or trying a promotional offer. Each deal has clear instructions to follow to receive your credit.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>When will I receive my savings voucher?</h3>
+        <p>Once all required deals have been completed and verified by our promotional partners, your $750 Home Depot Holiday savings voucher will be processed and sent directly to your email.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How is my personal information protected?</h3>
+        <p>We take privacy and security seriously. Information you provide is processed securely in accordance with applicable privacy laws to verify your eligibility and deliver your savings voucher.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      This is a promotional offer. Participation requires completion of partner offers. Not affiliated with The Home Depot.
+    </div>
+  </div>
+</body>
+</html>
